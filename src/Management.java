@@ -7,7 +7,7 @@ public class Management implements IManageable {
     private final List<Person> persons;
     private final List<Course> courses;
     private final List<Department> departments;
-
+//Public Management properties with an array list
     public Management() {
         this.persons = new ArrayList<>();
         this.courses = new ArrayList<>();
