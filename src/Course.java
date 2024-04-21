@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Course {
     private String courseName;
     private String courseCode;
@@ -13,7 +11,6 @@ public class Course {
         this.enrolledStudents = new ArrayList<>();
     }
 
-    // Getters and setters
     public String getCourseName() {
         return courseName;
     }
