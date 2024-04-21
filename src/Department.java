@@ -28,4 +28,15 @@ public class Department {
         courses.add(course);
     }
 
-    public List<Faculty> getFacultyMe
+    public List<Faculty> getFacultyMembers() {
+        return facultyMembers;
+    }
+
+    public void addFacultyMember(Faculty faculty) {
+        facultyMembers.add(faculty);
+    }
+
+    public boolean isFacultyEnrolled(Faculty faculty) {
+        return facultyMembers.contains(faculty);
+    }
+}
