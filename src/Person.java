@@ -9,11 +9,32 @@ public abstract class Person {
         this.ID = ID;
     }
 
-    // Abstract method to be implemented by subclasses
     abstract void displayInfo();
+
+    // Getters and setters
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 
     public String getID() {
         return ID;
     }
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
 }
+
 
