@@ -3,6 +3,7 @@ public class Department {
         private List<Course> courses;
         private List<Faculty> facultyMembers;
 
+//        show to users
         public Department(String departmentName) {
             this.departmentName = departmentName;
             this.courses = new ArrayList<>();
