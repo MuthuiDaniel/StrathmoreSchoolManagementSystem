@@ -1,19 +1,38 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Student extends Person {
     private double GPA;
-    private List<String> coursesEnrolled;
+    private List<Course> enrolledCourses;
 
-    public Student(String name, int age, String ID, double GPA, List<String> coursesEnrolled) {
+    public Student(String name, int age, String ID, double GPA) {
         super(name, age, ID);
         this.GPA = GPA;
-        this.coursesEnrolled = coursesEnrolled;
+        this.enrolledCourses = new ArrayList<>();
+    }
+
+    public double getGPA() {
+        return GPA;
+    }
+
+    public void setGPA(double GPA) {
+        this.GPA = GPA;
+    }
+
+    public List<Course> getEnrolledCourses() {
+        return enrolledCourses;
+    }
+
+    public void enrollCourse(Course course) {
+        enrolledCourses.add(course);
     }
 
     @Override
-    void displayInfo() {
-        System.out.println("Student Name: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("ID: " + ID);
+    public void displayInfo() {
         System.out.println("GPA: " + GPA);
-        System.out.println("Courses Enrolled: " + coursesEnrolled);
+        System.out.println("Enrolled Courses: ");
+        for (Course course : enrolledCourses) {
+            System.out.println(course.getCourseName() + " (" + course.getCourseCode() + ")");
+        }
     }
 }
