@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+
 public class Department {
     private String departmentName;
     private List<Course> courses;
@@ -11,7 +12,6 @@ public class Department {
         this.facultyMembers = new ArrayList<>();
     }
 
-    // Getters and setters
     public String getDepartmentName() {
         return departmentName;
     }
@@ -28,15 +28,4 @@ public class Department {
         courses.add(course);
     }
 
-    public List<Faculty> getFacultyMembers() {
-        return facultyMembers;
-    }
-
-    public void addFacultyMember(Faculty faculty) {
-        facultyMembers.add(faculty);
-    }
-
-    public boolean isFacultyEnrolled(Faculty faculty) {
-        return facultyMembers.contains(faculty);
-    }
-}
+    public List<Faculty> getFacultyMe
