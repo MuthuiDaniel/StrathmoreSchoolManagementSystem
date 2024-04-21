@@ -2,6 +2,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
+//Class Managements implements Imanageable
 public class Management implements IManageable {
     private final List<Person> persons;
     private final List<Course> courses;
