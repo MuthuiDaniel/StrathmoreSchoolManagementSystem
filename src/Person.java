@@ -9,7 +9,7 @@ public abstract class Person {
         this.ID = ID;
     }
 
-    abstract void displayInfo();
+    public abstract void displayInfo();
 
     // Getters and setters
     public String getName() {
@@ -36,5 +36,3 @@ public abstract class Person {
         this.ID = ID;
     }
 }
-
-
